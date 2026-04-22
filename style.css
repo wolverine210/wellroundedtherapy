@@ -53,8 +53,7 @@ nav { max-width: 1140px; margin: 0 auto; padding: 0 5%; display: flex; align-ite
 .hero-text h1 em { font-style: italic; color: var(--sage); }
 .hero-tagline { font-size: 1.05rem; color: var(--ink-mid); max-width: 440px; margin-bottom: 2.2rem; line-height: 1.7; }
 .hero-visual { position: relative; }
-.hero-visual::before { content: ''; position: absolute; inset: -18px -18px 18px 18px; background: linear-gradient(135deg, var(--sage-lt), var(--sky-lt)); border-radius: 60% 40% 55% 45% / 45% 55% 45% 55%; z-index: 0; }
-.hero-visual img { position: relative; z-index: 1; width: 100%; max-width: 460px; margin: 0 auto; border-radius: 24px; box-shadow: var(--shadow); object-fit: cover; }
+.hero-visual img { width: 100%; max-width: 580px; margin: 0 auto; border-radius: 18px; box-shadow: 0 8px 40px rgba(80,110,90,.18); object-fit: cover; display: block; }
 
 /* ── ABOUT ── */
 #about { background: var(--white); }
@@ -100,14 +99,14 @@ nav { max-width: 1140px; margin: 0 auto; padding: 0 5%; display: flex; align-ite
 .insurance-note { margin-top: 1.2rem; font-size: .85rem; color: var(--ink-lt); line-height: 1.6; }
 
 /* ── CLIENT PORTAL ── */
-.portal-section { background: var(--cream); }
-.portal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-.portal-text { font-size: .98rem; color: var(--ink-mid); margin-bottom: 1rem; line-height: 1.75; }
-.portal-cards-wrap { display: flex; flex-direction: column; gap: 1.5rem; }
-.portal-card { background: var(--white); border-radius: var(--radius); padding: 2rem; border: 1px solid var(--sage-lt); box-shadow: var(--shadow); }
-.portal-icon { font-size: 1.8rem; margin-bottom: .8rem; }
-.portal-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 500; color: var(--ink); margin-bottom: .5rem; }
-.portal-card p { font-size: .88rem; color: var(--ink-lt); line-height: 1.65; margin-bottom: 1.3rem; }
+.portal-section { background: var(--cream); text-align: center; }
+.portal-intro { font-size: .98rem; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin: 0 auto 3rem; }
+.portal-cards-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 780px; margin: 0 auto; }
+.portal-card { background: var(--white); border-radius: var(--radius); padding: 2.5rem 2rem; border: 1px solid var(--sage-lt); box-shadow: var(--shadow); display: flex; flex-direction: column; align-items: center; text-align: center; transition: transform .2s, box-shadow .2s; }
+.portal-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(80,110,90,.16); }
+.portal-icon { font-size: 2rem; margin-bottom: 1rem; background: var(--sage-pale); width: 62px; height: 62px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.portal-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 500; color: var(--ink); margin-bottom: .6rem; }
+.portal-card p { font-size: .88rem; color: var(--ink-lt); line-height: 1.65; margin-bottom: 1.5rem; flex-grow: 1; }
 .portal-btn { display: inline-block; margin-left: 0; }
 
 /* ── CONTACT ── */
@@ -151,7 +150,7 @@ footer a:hover { text-decoration: underline; }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .about-photo { max-width: 320px; }
   .rates-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .portal-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .portal-cards-wrap { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
   .form-row { grid-template-columns: 1fr; }
 }
