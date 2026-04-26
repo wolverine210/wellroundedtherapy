@@ -56,7 +56,7 @@ nav { max-width: 1140px; margin: 0 auto; padding: 0 5%; display: flex; align-ite
 .hero-visual { position: relative; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 40px rgba(80,110,90,.22); align-self: stretch; }
 .hero-visual::before { display: none; }
 .hero-visual::after { display: none; }
-.hero-visual img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center center; filter: none; }
+.hero-visual img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center center; }
 
 /* ── ABOUT ── */
 #about { background: var(--white); }
@@ -100,17 +100,6 @@ nav { max-width: 1140px; margin: 0 auto; padding: 0 5%; display: flex; align-ite
 .insurance-list li { display: flex; align-items: center; gap: .75rem; font-size: .95rem; color: var(--ink-mid); padding: .85rem 1.1rem; background: var(--sky-pale); border-radius: 10px; border: 1px solid var(--sky-lt); }
 .insurance-list li::before { content: '✓'; color: var(--sage); font-weight: 700; font-size: 1rem; flex-shrink: 0; }
 .insurance-note { margin-top: 1.2rem; font-size: .85rem; color: var(--ink-lt); line-height: 1.6; }
-
-/* ── CLIENT PORTAL ── */
-.portal-section { background: var(--cream); text-align: center; }
-.portal-intro { font-size: .98rem; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin: 0 auto 3rem; }
-.portal-cards-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 780px; margin: 0 auto; }
-.portal-card { background: var(--white); border-radius: var(--radius); padding: 2.5rem 2rem; border: 1px solid var(--sage-lt); box-shadow: var(--shadow); display: flex; flex-direction: column; align-items: center; text-align: center; transition: transform .2s, box-shadow .2s; }
-.portal-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(80,110,90,.16); }
-.portal-icon { font-size: 2rem; margin-bottom: 1rem; background: var(--sage-pale); width: 62px; height: 62px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-.portal-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 500; color: var(--ink); margin-bottom: .6rem; }
-.portal-card p { font-size: .88rem; color: var(--ink-lt); line-height: 1.65; margin-bottom: 1.5rem; flex-grow: 1; }
-.portal-btn { display: inline-block; margin-left: 0; }
 
 /* ── CONTACT ── */
 #contact { background: var(--white); }
